@@ -165,7 +165,7 @@ if __name__ == "__main__":
                   
                         # df = pd.read_csv(file)
                         mashup(singer,x,y,email_id)
-                        st.balloons()
+               
                         # delete_after_use=True
                         # if delete_after_use:
                         #     for i in range(int(x)):
