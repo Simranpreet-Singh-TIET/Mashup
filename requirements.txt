@@ -3,3 +3,5 @@ moviepy==1.0.3
 pytube==12.1.2
 pydub==0.25.1
 youtube_search==2.1.2
+ffmpeg-python
+ffprobe-python
