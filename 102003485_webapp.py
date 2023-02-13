@@ -166,10 +166,10 @@ if __name__ == "__main__":
                         # df = pd.read_csv(file)
                         mashup(singer,x,y,email_id)
                
-                        # delete_after_use=True
-                        # if delete_after_use:
-                        #     for i in range(int(x)):
-                        #         if os.path.exists("audio_file"+str(i)+".mp3"):
-                        #             os.remove("audio_file"+str(i)+".mp3")
+                        delete_after_use=True
+                        if delete_after_use:
+                            for i in range(int(x)):
+                                if os.path.exists("audio_file"+str(i)+".mp3"):
+                                    os.remove("audio_file"+str(i)+".mp3")
                     except Exception as e:
                         st.error(e)      
