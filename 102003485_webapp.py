@@ -8,7 +8,7 @@ from moviepy.editor import *
 
 
 def send_mail(email_id,resultfile):
-    fromaddr = "simranmangat700@gmail.com"
+    fromaddr = st.secrets['email']
     toaddr = email_id
    
 # instance of MIMEMultipart
@@ -46,7 +46,7 @@ def send_mail(email_id,resultfile):
     s.starttls()
   
 # Authentication
-    s.login(fromaddr,"ttgyiwytvhlxfmwi")
+    s.login(fromaddr,st.secrets['password'])
   
 # Converts the Multipart msg into a string
     text = msg.as_string()
